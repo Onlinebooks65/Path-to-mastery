@@ -278,7 +278,6 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
-        /* Completion Page Styling - NEW */
         .completion-page {
             text-align: center;
             padding: 40px 20px;
@@ -687,6 +686,33 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #b08c2e;
         }
+
+        /* Faith chapter styling */
+        .faith-story {
+            background: #f9f7f4;
+            border-left: 4px solid #c9a03e;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .testimonial-box {
+            background: #e8f0fe;
+            border: 1px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .scripture-box {
+            background: #f0e8d8;
+            border-left: 4px solid #8e6b3c;
+            padding: 15px 20px;
+            margin: 25px 0;
+            font-style: italic;
+            font-family: 'Georgia', serif;
+            border-radius: 0 8px 8px 0;
+        }
     </style>
 </head>
 <body>
@@ -716,7 +742,7 @@
                 
                 <div class="nav-buttons">
                     <button class="nav-btn" id="prev-btn" onclick="changeChapter(-1)">← Iliyopita</button>
-                    <span class="page-indicator" id="page-indicator">Sura ya 1 kati ya 33</span>
+                    <span class="page-indicator" id="page-indicator">Sura ya 1 kati ya 34</span>
                     <button class="nav-btn" id="next-btn" onclick="changeChapter(1)">Ijayo →</button>
                 </div>
             </div>
@@ -724,7 +750,7 @@
     </div>
 
     <script>
-        // COMPLETE SWAHILI BOOK - 31 CHAPTERS + COVER + COMPLETION PAGE = 33 PAGES
+        // COMPLETE SWAHILI BOOK - 31 CHAPTERS + COVER + FAITH CHAPTER + COMPLETION PAGE = 34 PAGES
         const chapters = [
             // COVER - Sura ya 0
             {
@@ -1544,7 +1570,69 @@ Hujachelewa. rudia ukisema "SIJACHELEWA".
 
 Jipende. Kuwa na subira. Na endelea kutembea katika njia iliyobora."`
             },
-            // COMPLETION PAGE - Sura ya 32 (NEW)
+            // SURA YA 32: KURUDI KWA MUNGU (NEW FAITH CHAPTER)
+            {
+                part: "SEHEMU YA SABA: MWANZO WAKO MPYA",
+                title: "Sura ya 32: Kurudi Kwenye Asili – Mungu na Njia ya Umahiri",
+                content: `
+                    Katika miaka yangu ya kutoa ushauri na huduma, nimekutana na watu wa aina mbalimbali. Lakini kuna kundi moja la watu ambalo limenigusa sana—**wachungaji, watumishi wa Mungu, na ndoa za Kikristo** ambao wanajitahidi na punyeto na tamaa za kidunia.
+
+                    <div class="scripture-box">
+                        "Kwani mimi najua makusudi niliyowakusudia ninyi, asema Bwana, ni makusudi ya amani wala si ya msiba, kuwapa ninyi mwisho wa kungojea." — Yeremia 29:11
+                    </div>
+
+                    <h3>🙏 Waja Wema na Mapambano ya Siri</h3>
+                    
+                    <p>Nimewahi kuhudumia mchungaji mmoja mwenye miaka 45, mwenye familia nzuri na watoto watatu. Kwa nje, alikuwa mfano wa kuigwa—mhubiri mahiri, mchungaji mwenye upendo, na mume mwaminifu. Lakini usiku, alipokuwa peke yake, alijikuta akitizama ponografia na kujiridhisha. Aliniambia kwa machozi: "Dk. King, nahisi kama mnafiki. Ninasimama jukwaani kuhubiri juu ya usafi, lakini ndani nimejaa uchafu. Nahisi sina tumaini."</p>
+
+                    <p>Hadithi yake si ya pekee. Nimekutana na mapadri, wachungaji, viongozi wa kuinua, na wanafunzi wa theolojia ambao wanajitahidi na punyeto. Wengi wao wanaamini kuwa hawana tumaini—kwamba Mungu amewaacha kwa sababu ya dhambi yao. Lakini hii si kweli!</p>
+
+                    <div class="testimonial-box">
+                        <h4>📖 Ushuhuda wa Mchungaji</h4>
+                        <p>"Nilidhani kuwa kwa sababu ninafungwa na punyeto, Mungu hataweza kunitumia tena. Lakini Dk. King alinifundisha kwamba neema ya Mungu ni kubwa kuliko dhambi yangu yote. Sio kwamba nina uhuru wa kuendelea kutenda dhambi, lakini sina haja ya kuendelea kuishi katika hatia na aibu." — Mchungaji J.K.</p>
+                    </div>
+
+                    <h3>💍 Ndoa na Dhambi ya Siri</h3>
+
+                    <p>Pia nimewahi kuhudumia wanandoa waliokwishaoana—watu wazima, wenye familia, lakini bado wanajitahidi na punyeto. Wengine wanafanya punyeto kwa sababu wanaogopa kufanya mapenzi na wenzi wao! Ndiyo, umesoma sawa.</p>
+
+                    <p>Wengine walikulia katika mazingira ya kidini sana ambapo walifundishwa kuwa ngono ni "chafu" na "dhambi" kabla ya ndoa. Walijifunza kukandamiza hisia zao kwa miaka mingi. Lakini walipooana, waligundua kuwa hawakuweza "kuwasha" na mwenzi wao. Walikuwa wamezoea kujiridhisha peke yao, na sasa wanajikuta wakiendelea na tabia hiyo hata wakiwa katika ndoa.</p>
+
+                    <div class="faith-story">
+                        <h4>❤️ Hadithi ya Hannah na Ben</h4>
+                        <p>Hannah alikulia kanisani—alikuwa "pastor's kid" ambaye hakuwahi hata kuvuta sigara. Alikutana na Ben kwenye mkutano wa vijana wa Kikristo. Walianza kuchumbiana Hannah akiwa na miaka 16, na wakaoa wakiwa na miaka 20.</p>
+                        
+                        <p>Walikuwa wameamua kungojea ndoa kufanya mapenzi. Lakini usiku wao wa harusi ulikuwa tofauti kabisa na walivyotarajia. Walishindwa kufanya mapenzi. Walidhani ni tatizo la usiku mmoja tu. Lakini miezi sita ilipita kabla hawajaweza kufanya mapenzi. Na kwa miaka mitatu ya kwanza ya ndoa yao, <strong>walifanya mapenzi mara tatu tu</strong>.</p>
+                        
+                        <p>Hannah alihisi aibu na kukata tamaa. Alihisi kama amemsaliti Mungu—alifanya yote mema, alingojea ndoa, lakini "tuzo" yake haikuja. Aliwaza kama Ben angeweza kumwacha. Alimwambia Ben: "Nitaelewa kama unataka kuondoka. Au kama hatuwezi kupata watoto, je, bado unataka kuwa nami?"</p>
+                        
+                        <p>Walitembelea madaktari, walijaribu ushauri wa ndoa, lakini hakuna kilichosaidia. Hadi mwaka 2013, kanisa lao lilitangaza "mwaka wa mafanikio." Walikuwa wakiomba mafanikio katika ndoa yao kwa miaka mitatu. Mwishoni mwa mwaka, Desemba 31, Hannah alisema hakukuwa na mabadiliko yoyote—hakukuwa na uzoefu wa miujiza, hakukuwa na maombi maalum. Lakini usiku huo, walifanya mapenzi kwa mara ya nne, na hii ilikuwa mwanzo wa uponyaji wao.</p>
+                        
+                        <p>Hannah anasema: "<strong>Ilikuwa muujiza unaoendelea.</strong> Sio uponyaji wa ghafla, lakini polepole tulianza kufurahia uhusiano wa kimwili. Bado nilikuwa na hofu na wasiwasi kuhusu ngono, lakini haikuwa mbaya kama zamani."</p>
+                        
+                        <p>Hannah aligundua kitu muhimu: alikuwa anaogopa ngono, si kuitii Mungu. Alisema: "<strong>Nilikuwa naogopa ngono kabla ya ndoa, si kuitii Mungu. Hiyo ni upotofu wa neema—kujaribu kupata kitu ambacho hatuwezi kukipata kwa juhudi zetu.</strong>"</p>
+                    </div>
+
+                    <h3>🔑 Funguo za Uponyaji wa Kiroho</h3>
+                    
+                    <p>Ikiwa wewe ni mwamini unayejitahidi na punyeto, hapa kuna ukweli unaohitaji kujua:</p>
+                    
+                    <ul>
+                        <li><strong>Mungu hakukatai.</strong> Aibu na hatia zinatoka kwa adui, si kwa Mungu. Yeremia 31:34 anasema: "Nitasamehe uovu wao, wala dhambi zao sita zikumbukwa tena."</li>
+                        <li><strong>Neema si ruhusa ya kuendelea kutenda dhambi.</strong> Lakini neema ndiyo nguvu ya kuyaacha. Waefeso 2:8-9 linatuambia wokovu ni kwa neema, si kwa matendo yetu.</li>
+                        <li><strong>Tafuta msaada.</strong> Hannah alihitaji mwaka wa tatu kabla ya kuwa tayari kushiriki na marafiki. Usibebe mzigo huu peke yako. Yakobo 5:16 linatuambia: "Ziangalieni dhambi zenu ninyi kwa ninyi, na kuombeana, ili mpate kupona."</li>
+                        <li><strong>Uponyaji ni mchakato, si tukio la mara moja.</strong> Hannah aliuita "muujiza unaoendelea." Usikate tamaa kama mambo hayabadiliki mara moja.</li>
+                        <li><strong>Elimu ya ngono ya Kikristo ni muhimu.</strong> Hannah alisoma Sexology (sayansi ya tabia ya ngono) ili kuelewa makutano ya imani na ujinsia. Anasema: "Bado naamini ngono ni kwa ajili ya ndoa, lakini sababu yangu ya kungojea sasa ni tofauti. Si kwa sababu ya hofu, bali kwa sababu ya heshima ya mpango wa Mungu."</li>
+                    </ul>
+
+                    <div class="note">
+                        <p><strong>Kumbuka:</strong> Wacha Mungu akuponye. Ikiwa umeshindwa, usikimbie mbali na Mungu—kimbilia kwake. Yeye husubiri kukukaribisha nyumbani, kama baba wa mwana mpotevu. Haangalii dosari zako; anaangalia moyo wako unaotaka kurejea kwake.</p>
+                    </div>
+
+                    <p>Katika sura inayofuata, tutamalizia safari yetu kwa kukumbatia upya neema ya Mungu na kuanza upya.</p>
+                `
+            },
+            // COMPLETION PAGE - Sura ya 33 (UPDATED INDEX)
             {
                 part: "HONGERA!",
                 title: "Hongera! Umemaliza Kitabu",
@@ -1700,4 +1788,3 @@ Jipende. Kuwa na subira. Na endelea kutembea katika njia iliyobora."`
     </script>
 </body>
 </html>
-
